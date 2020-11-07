@@ -6,12 +6,12 @@ import { topicItem } from '../styles';
 const TopicItem = (props) => {
     return(
         <TouchableOpacity
-            style={[topicItem.container, { backgroundColor: `#${props.item.color}` }]}
+            style={[topicItem.container, {backgroundColor: `#${props.item.color}`}]}
             onPress={props.onSelect}
         >
-            <Text>{props.item.name}</Text>
+            <Text style={topicItem.text}>{props.item.name}</Text>
         </TouchableOpacity>
-    )
+    );
 };
 
 export {TopicItem};

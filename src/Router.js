@@ -12,10 +12,10 @@ const Stack = createStackNavigator();
 function Router() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Introduction} />
-        <Stack.Screen name="Home" component={Jobs} />
-        <Stack.Screen name="Home" component={SavedJobs} />
+      <Stack.Navigator screenOptions = {{ headerShown: false }}>
+        <Stack.Screen name="Intro" component={Introduction}/>
+        <Stack.Screen name="Jobs" component={Jobs}/>
+        <Stack.Screen name="SavedJobs" component={SavedJobs}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
